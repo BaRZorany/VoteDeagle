@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <PublishDir>./bin/$(AssemblyName)/</PublishDir>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CounterStrikeSharp.API" Version="*">
+      <PrivateAssets>none</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Reference T3MenuSharedAPI.dll -->
+    <Reference Include="T3MenuSharedAPI">
+      <HintPath>$(ProjectDir)T3MenuSharedAPI.dll</HintPath>
+      <Private>False</Private> <!-- Prevents the DLL from being copied to the output directory -->
+    </Reference>
+  </ItemGroup>
+
+  <!-- Post-build event to create the lang folder and en.json file -->
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if not exist &quot;$(OutDir)lang&quot; mkdir &quot;$(OutDir)lang&quot;" />
+    <Exec Command="( 
+      echo { 
+      echo   &quot;prefix&quot;: &quot;{LightBlue}[DeagleVote]{Default}&quot;, 
+      echo   &quot;enable.menu.title&quot;: &quot;{LightBlue}Enable {Lime}Deagle-Only{Default} Rounds?&quot;, 
+      echo   &quot;disable.menu.title&quot;: &quot;{LightBlue}Disable {Lime}Deagle-Only{Default} Rounds?&quot;, 
+      echo   &quot;menu.yes&quot;: &quot;{Green}✔ Yes&quot;, 
+      echo   &quot;menu.no&quot;: &quot;{Red}✖ No&quot;, 
+      echo   &quot;vote.already_voted&quot;: &quot;{Gold}You have already voted!&quot;, 
+      echo   &quot;vote.yes&quot;: &quot;{Lime}Voted {Green}Yes!&quot;, 
+      echo   &quot;vote.no&quot;: &quot;{LightRed}Voted {Red}No!&quot;, 
+      echo   &quot;vote.enabled_deagle&quot;: &quot;{LightBlue}Deagle mode {Green}activated!&quot;, 
+      echo   &quot;vote.disabled_deagle&quot;: &quot;{LightBlue}Deagle mode {Red}deactivated!&quot;, 
+      echo   &quot;vote.failed&quot;: &quot;{Silver}Vote failed. {Grey}Not enough votes.&quot;, 
+      echo   &quot;game.deagle_only_active&quot;: &quot;{Purple}Deagle-only round! {Magenta}Equipped!&quot;, 
+      echo   &quot;vote.started&quot;: &quot;{LightGreen}{0} {Yellow}started a vote! {Gold}/vd to participate&quot; 
+      echo }
+    ) > &quot;$(OutDir)lang\en.json&quot;" />
+</Target>
+</Project>
