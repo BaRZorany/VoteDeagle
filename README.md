@@ -6,13 +6,15 @@ A simple plugin based on [T3-Marius Menu](https://github.com/T3Marius/T3Menu-API
  ## ✨ Features
  * Enabling / Disabling Deagle Rounds
 
-
-
 ## 🛠️ Installation
 
 Download the latest version from the [Releases](https://github.com/BaRZorany/VoteDeagle/releases)
 Extract the files and place them inside the `addons` directory of your CS2 server.
 Restart your server, and you're good to go!
+
+****Usage:****
+Use the `/vd` command to start a vote.
+
 
 ## 🤝 Credits
 This plugin was generated with the help of AI and built upon the fantastic work of T3-Marius Menu.
