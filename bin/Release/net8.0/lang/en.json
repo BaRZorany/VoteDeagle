@@ -1,0 +1,15 @@
+{ 
+  "prefix": "{LightBlue}[DeagleVote]{Default}", 
+  "enable.menu.title": "Enable Deagle-Only Rounds?", 
+  "disable.menu.title": "Disable Deagle-Only Rounds?", 
+  "menu.yes": "✔ Yes", 
+  "menu.no": "✖ No", 
+  "vote.already_voted": "{Gold}You have already voted!", 
+  "vote.yes": "{Lime}Voted {Green}Yes!", 
+  "vote.no": "{LightRed}Voted {Red}No!", 
+  "vote.enabled_deagle": "{LightBlue}Deagle mode {Green}activated!", 
+  "vote.disabled_deagle": "{LightBlue}Deagle mode {Red}deactivated!", 
+  "vote.failed": "{Silver}Vote failed. {Grey}Not enough votes.", 
+  "game.deagle_only_active": "{Purple}Deagle-only round! {Magenta}Equipped!", 
+  "vote.started": "{LightGreen}{0} {Yellow}started a vote! {Gold}/vd to participate" 
+}
