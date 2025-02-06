@@ -14,8 +14,8 @@ using System.Reflection;
 public class DeagleVotePlugin : BasePlugin
 {
     public override string ModuleName => "Deagle Vote Plugin";
-    public override string ModuleVersion => "2.3";
-    public override string ModuleAuthor => "Your Name";
+    public override string ModuleVersion => "1.0";
+    public override string ModuleAuthor => "BaR";
 
     private bool _isDeagleOnlyEnabled = false;
     private Dictionary<int, bool> _playerVotes = new Dictionary<int, bool>();
