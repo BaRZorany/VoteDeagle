@@ -1,9 +1,0 @@
-C:\Users\Bar\Desktop\VoteDeagle\obj\Release\net8.0\VoteDeagle.csproj.AssemblyReference.cache
-C:\Users\Bar\Desktop\VoteDeagle\obj\Release\net8.0\VoteDeagle.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Bar\Desktop\VoteDeagle\obj\Release\net8.0\VoteDeagle.AssemblyInfoInputs.cache
-C:\Users\Bar\Desktop\VoteDeagle\obj\Release\net8.0\VoteDeagle.AssemblyInfo.cs
-C:\Users\Bar\Desktop\VoteDeagle\obj\Release\net8.0\VoteDeagle.csproj.CoreCompileInputs.cache
-C:\Users\Bar\Desktop\VoteDeagle\bin\Release\net8.0\VoteDeagle.dll
-C:\Users\Bar\Desktop\VoteDeagle\obj\Release\net8.0\VoteDeagle.dll
-C:\Users\Bar\Desktop\VoteDeagle\obj\Release\net8.0\refint\VoteDeagle.dll
-C:\Users\Bar\Desktop\VoteDeagle\obj\Release\net8.0\ref\VoteDeagle.dll
