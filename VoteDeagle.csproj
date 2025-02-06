@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <DebugSymbols>False</DebugSymbols>
     <DebugType>None</DebugType>
@@ -35,10 +35,10 @@
     <Exec Command="( 
       echo { 
       echo   &quot;prefix&quot;: &quot;{LightBlue}[DeagleVote]{Default}&quot;, 
-      echo   &quot;enable.menu.title&quot;: &quot;{LightBlue}Enable {Lime}Deagle-Only{Default} Rounds?&quot;, 
-      echo   &quot;disable.menu.title&quot;: &quot;{LightBlue}Disable {Lime}Deagle-Only{Default} Rounds?&quot;, 
-      echo   &quot;menu.yes&quot;: &quot;{Green}✔ Yes&quot;, 
-      echo   &quot;menu.no&quot;: &quot;{Red}✖ No&quot;, 
+      echo   &quot;enable.menu.title&quot;: &quot;Enable Deagle-Only Rounds?&quot;, 
+      echo   &quot;disable.menu.title&quot;: &quot;Disable Deagle-Only Rounds?&quot;, 
+      echo   &quot;menu.yes&quot;: &quot;✔ Yes&quot;, 
+      echo   &quot;menu.no&quot;: &quot;✖ No&quot;, 
       echo   &quot;vote.already_voted&quot;: &quot;{Gold}You have already voted!&quot;, 
       echo   &quot;vote.yes&quot;: &quot;{Lime}Voted {Green}Yes!&quot;, 
       echo   &quot;vote.no&quot;: &quot;{LightRed}Voted {Red}No!&quot;, 
